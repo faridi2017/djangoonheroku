@@ -1,0 +1,16 @@
+{% extends 'base.html' %} <!-- Add this for inheritance -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>index</title>
+</head>
+<body>
+{% block pagecontent %}
+<h2>main page</h2>
+<a href="{% url 'home' %}">Go Home</a>
+  <a href="{% url 'about' %}">About This Site</a>
+{% endblock %}
+</body>
+</html>
